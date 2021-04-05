@@ -1,0 +1,28 @@
+.logo {
+  font-family: Raleway;
+  @include font-style(1.19, 26px);
+  color: $accent-color;
+
+  @extend %link;
+}
+
+.logo-black {
+  color: #000000;
+}
+
+.logo-inverse {
+  color: $primary-background-color;
+}
+
+.header__logo {
+  margin-right: 93px;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.reset-styles {
+  @extend %reset-styles;
+}

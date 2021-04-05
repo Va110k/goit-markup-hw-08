@@ -1,0 +1,24 @@
+.adress {
+  color: $primary-background-color;
+}
+
+.adress__list {
+  padding-left: 0px;
+
+  @extend %list;
+}
+
+.adress__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.adress__link {
+  font-style: normal;
+  color: $secondary-background-color;
+
+  @extend %link;
+}
+
+.adress__link-color {
+  color: rgba(255, 255, 255, 0.6);
+}

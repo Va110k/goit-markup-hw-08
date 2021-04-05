@@ -1,0 +1,40 @@
+.clients {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0px;
+
+  @extend %list;
+}
+
+.clients__link {
+  color: #afb1b8;
+
+  transition: color $timing $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  @extend %link;
+}
+
+.clients__group {
+  width: 170px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  transition: border $timing $timing-function;
+
+  .clients__link:hover & {
+    border: 1px solid $accent-color;
+  }
+}
+
+.clients__icon {
+  fill: currentColor;
+}
