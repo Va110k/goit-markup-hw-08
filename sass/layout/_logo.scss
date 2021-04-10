@@ -1,9 +1,13 @@
 .logo {
   font-family: Raleway;
-  @include font-style(1.19, 26px);
+  @include font-style(1.19, 24px);
   color: $accent-color;
 
   @extend %link;
+
+  @media screen and (min-width: $desktop) {
+    @include font-style(1.19, 26px);
+  }
 }
 
 .logo-black {
@@ -19,8 +23,7 @@
 }
 
 .footer__logo {
-  // display: inline-block;
-  // margin-bottom: 20px;
+  display: inline-block;
 }
 
 .reset-styles {

@@ -4,12 +4,18 @@
 
 .adress__list {
   padding-left: 0px;
+  margin-top: 20px;
+  margin-bottom: 60px;
 
   @extend %list;
 }
 
 .adress__item:not(:last-child) {
-  // margin-bottom: 9px;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 9px;
+  }
 }
 
 .adress__link {

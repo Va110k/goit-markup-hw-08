@@ -1,9 +1,21 @@
 .clients {
-  // display: flex;
-  // justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding-left: 0px;
 
   @extend %list;
+
+  margin: -15px;
+
+  @media screen and (min-width: $desktop) {
+    flex-wrap: nowrap;
+  }
+}
+
+.clients_item {
+  width: calc((100% - 2 * 30px) / 2);
+  margin: 15px;
 }
 
 .clients__link {
@@ -20,7 +32,6 @@
 }
 
 .clients__group {
-  width: 170px;
   height: 90px;
   display: flex;
   justify-content: center;
@@ -32,6 +43,10 @@
 
   .clients__link:hover & {
     border: 1px solid $accent-color;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 170px;
   }
 }
 

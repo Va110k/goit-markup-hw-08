@@ -4,9 +4,17 @@
   margin-right: auto;
   padding-left: 0px;
   justify-content: center;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 
   @extend %list;
+
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 30px;
+  }
+}
+
+.socials-footer {
+  padding-bottom: 0;
 }
 
 .socials__item:not(:last-child) {
