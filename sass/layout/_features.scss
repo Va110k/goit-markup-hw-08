@@ -1,6 +1,6 @@
 .features {
-  display: flex;
-  padding-left: 0px;
+  // display: flex;
+  // padding-left: 0px;
 
   @extend %list;
 }
@@ -9,12 +9,12 @@
   width: 270px;
 
   &:not(:last-child) {
-    margin-right: 30px;
+    // margin-right: 30px;
   }
 }
 
 .features__title {
-  margin-bottom: 10px;
+  // margin-bottom: 10px;
 
   font-weight: 700;
   line-height: 1.14;
