@@ -10,6 +10,10 @@
 
   transition: opacity $timing $timing-function;
 
+  @media screen and (max-width: 767px) {
+    padding: 93px 15px 94px 15px;
+  }
+
   overflow-y: scroll;
 }
 
@@ -23,8 +27,6 @@
 }
 
 .modal {
-  min-width: 450px;
-  min-height: 609px;
   padding: 40px;
 
   background: #fff;
@@ -32,12 +34,16 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1) rotate(0);
+  @media screen and (min-width: $tablet) {
+    min-width: 450px;
+    min-height: 609px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1) rotate(0);
 
-  transition: transform 500ms $timing-function;
+    transition: transform 500ms $timing-function;
+  }
 
   @media screen and (min-width: $desktop) {
     min-width: 528px;
@@ -49,10 +55,15 @@
   margin-bottom: 12px;
 
   font-weight: 700;
-  @include font-style(1.15, 20px);
+  @include font-style(1.5, 20px);
   text-align: center;
 
   @extend %reset-styles;
+
+  @media screen and (min-width: $desktop) {
+    @include font-style(1.15, 20px);
+    text-align: center;
+  }
 }
 
 .form-modal {
@@ -160,6 +171,12 @@
   margin-bottom: 30px;
 
   cursor: pointer;
+
+  @include font-style(1.17, 12px);
+
+  @media screen and (min-width: $desktop) {
+    @include font-style(1.71, 14px);
+  }
 }
 
 .checkbox__input {

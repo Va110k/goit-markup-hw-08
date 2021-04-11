@@ -12,7 +12,7 @@
 
   @extend %list;
 
-  display: none;
+  // display: none;
 
   @media screen and (min-width: $desktop) {
     display: flex;

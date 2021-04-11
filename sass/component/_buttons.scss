@@ -124,6 +124,17 @@
   cursor: pointer;
 }
 
+.menu-burger__icon {
+  fill: currentColor;
+
+  transition: fill $timing $timing-function;
+
+  .menu-burger:hover &,
+  .menu-burger:focus & {
+    fill: $accent-color;
+  }
+}
+
 .icon-cross {
   display: none;
 
