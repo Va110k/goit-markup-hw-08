@@ -12,9 +12,7 @@
 
   @extend %list;
 
-  // display: none;
-
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $tablet) {
     display: flex;
   }
 }
@@ -46,6 +44,10 @@
     transition: color $timing $timing-function;
 
     bottom: -1px;
+
+    @media screen and (min-width: $tablet) {
+      display: none;
+    }
   }
 }
 

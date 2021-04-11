@@ -122,6 +122,10 @@
   margin: 0;
   padding: 0;
   cursor: pointer;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .menu-burger__icon {
