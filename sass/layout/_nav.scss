@@ -1,19 +1,28 @@
 .main-nav {
-  // display: flex;
-  // align-items: center;
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+  }
 }
 
 .nav {
-  // display: flex;
   padding-left: 0px;
 
   @extend %list;
 
   display: none;
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
 }
 
 .nav__item:not(:last-child) {
-  // margin-right: 50px;
+  @media screen and (min-width: $desktop) {
+    margin-right: 50px;
+  }
 }
 
 .nav__link-current {

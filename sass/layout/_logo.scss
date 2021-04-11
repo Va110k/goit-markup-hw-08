@@ -19,7 +19,9 @@
 }
 
 .header__logo {
-  // margin-right: 93px;
+  @media screen and (min-width: $desktop) {
+    margin-right: 93px;
+  }
 }
 
 .footer__logo {

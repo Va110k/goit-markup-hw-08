@@ -6,7 +6,9 @@
 
   @extend %list;
 
-  margin: -15px;
+  @media screen and (max-width: 1199px) {
+    margin: -15px;
+  }
 
   @media screen and (min-width: $desktop) {
     flex-wrap: nowrap;

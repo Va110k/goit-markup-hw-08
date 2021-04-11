@@ -1,8 +1,24 @@
 .header {
+  position: relative;
   border-bottom: 1px solid #ececec;
 
   @media screen and (max-width: 767px) {
     padding-top: 16px;
     padding-bottom: 16px;
+  }
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+
+  padding: 40px;
+  background-color: $primary-background-color;
+
+  &.is-open {
+    display: block;
   }
 }

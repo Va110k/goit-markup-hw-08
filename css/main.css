@@ -253,6 +253,29 @@
   fill: #2196f3;
 }
 
+.menu-burger {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.icon-cross {
+  display: none;
+}
+
+.menu-burger.is-open .icon-cross {
+  display: block;
+}
+
+.menu-burger.is-open .icon-menu {
+  display: none;
+}
+
 .socials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -336,7 +359,12 @@
   letter-spacing: 0.03em;
 }
 
+.body.modal-open {
+  overflow: hidden;
+}
+
 .header {
+  position: relative;
   border-bottom: 1px solid #ececec;
 }
 
@@ -345,6 +373,20 @@
     padding-top: 16px;
     padding-bottom: 16px;
   }
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 40px;
+  background-color: #ffffff;
+}
+
+.menu-container.is-open {
+  display: block;
 }
 
 .logo {
@@ -371,13 +413,50 @@
   color: #ffffff;
 }
 
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    margin-right: 93px;
+  }
+}
+
 .footer__logo {
   display: inline-block;
+}
+
+.main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .main-nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .nav {
   padding-left: 0px;
   display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .nav__link-current {
@@ -441,6 +520,25 @@
   display: none;
 }
 
+@media screen and (min-width: 1200px) {
+  .contacts {
+    margin-left: auto;
+    padding-left: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
 .contacts__link {
   color: #757575;
   font-weight: 500;
@@ -455,8 +553,30 @@
   color: #2196f3;
 }
 
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
 .contacts__icon {
   fill: currentColor;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__icon {
+    margin-right: 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .hero {
@@ -690,7 +810,12 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-left: 0px;
-  margin: -15px;
+}
+
+@media screen and (max-width: 1199px) {
+  .clients {
+    margin: -15px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1050,6 +1175,7 @@
   opacity: 1;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
 }
 
 .backdrop-is-hidden {
@@ -1063,8 +1189,8 @@
 }
 
 .modal {
-  min-width: 528px;
-  min-height: 581px;
+  min-width: 450px;
+  min-height: 609px;
   padding: 40px;
   background: #fff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1079,6 +1205,13 @@
   transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
 }
 
 .modal__text {
@@ -1098,9 +1231,14 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 448px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-modal {
+    width: 448px;
+  }
 }
 
 .form-modal__label {

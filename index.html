@@ -44,6 +44,19 @@
                         </a>
                     </li>
                 </ul>
+                <button type="button" 
+                        class="menu-burger" 
+                        aria-expanded="false"
+                        aria-controls="menu-container"
+                        data-menu-button>
+                    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                        <use class="icon-cross" href="./images/sprite.svg#close-burger"></use>
+                        <use class="icon-menu" href="./images/sprite.svg#menu-burger"></use>
+                    </svg>
+                </button>
+                <div class="menu-container" id="menu-container" data-menu>
+                    Контент меню
+                </div>
             </nav>
         </div>
     </header>
@@ -344,7 +357,7 @@
 
             <!-- clients -->
             <section class="section">
-                <h2 class="section__title">Постоянные клиенты</h2>
+                <h2 class="section__title title-clients">Постоянные клиенты</h2>
                 <div class="container">
                     <ul class="clients">
                         <li class="clients_item">
@@ -539,5 +552,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

@@ -114,3 +114,24 @@
     fill: $accent-color;
   }
 }
+
+.menu-burger {
+  display: inline-flex;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.icon-cross {
+  display: none;
+
+  .menu-burger.is-open & {
+    display: block;
+  }
+}
+
+.menu-burger.is-open .icon-menu {
+  display: none;
+}

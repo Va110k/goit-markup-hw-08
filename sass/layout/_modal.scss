@@ -9,6 +9,8 @@
   opacity: 1;
 
   transition: opacity $timing $timing-function;
+
+  overflow-y: scroll;
 }
 
 .backdrop-is-hidden {
@@ -21,8 +23,8 @@
 }
 
 .modal {
-  min-width: 528px;
-  min-height: 581px;
+  min-width: 450px;
+  min-height: 609px;
   padding: 40px;
 
   background: #fff;
@@ -36,6 +38,11 @@
   transform: translate(-50%, -50%) scale(1) rotate(0);
 
   transition: transform 500ms $timing-function;
+
+  @media screen and (min-width: $desktop) {
+    min-width: 528px;
+    min-height: 581px;
+  }
 }
 
 .modal__text {
@@ -52,10 +59,14 @@
   display: flex;
   flex-direction: column;
 
-  width: 448px;
+  // width: 448px;
 
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: $desktop) {
+    width: 448px;
+  }
 }
 
 .form-modal__label {

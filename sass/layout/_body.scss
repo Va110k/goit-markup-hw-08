@@ -5,4 +5,8 @@
   font-family: Roboto, sans-serif;
 
   @include font-style();
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }
