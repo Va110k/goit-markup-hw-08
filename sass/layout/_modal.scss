@@ -42,6 +42,11 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
+  @media screen and (max-width: 480px) {
+    min-width: 90vw;
+    min-height: 80vh;
+  }
+
   @media screen and (min-width: $tablet) {
     width: 450px;
     min-height: 609px;
@@ -64,7 +69,6 @@
 
   @media screen and (min-width: $desktop) {
     @include font-style(1.15, 20px);
-    text-align: center;
   }
 }
 
@@ -175,6 +179,10 @@
   cursor: pointer;
 
   @include font-style(1.17, 12px);
+
+  @media screen and (max-width: 480px) {
+    @include font-style(1.71, 10px, 00.02em);
+  }
 
   @media screen and (min-width: $desktop) {
     @include font-style(1.71, 14px);

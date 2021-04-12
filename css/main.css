@@ -408,8 +408,8 @@
 
 @media screen and (max-width: 767px) {
   .header {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -1328,6 +1328,13 @@
   border-radius: 4px;
 }
 
+@media screen and (max-width: 480px) {
+  .modal {
+    min-width: 90vw;
+    min-height: 80vh;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .modal {
     width: 450px;
@@ -1356,7 +1363,6 @@
     line-height: 1.15;
     font-size: 20px;
     letter-spacing: 0.03em;
-    text-align: center;
   }
 }
 
@@ -1497,6 +1503,14 @@
   line-height: 1.17;
   font-size: 12px;
   letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 480px) {
+  .checkbox {
+    line-height: 1.71;
+    font-size: 10px;
+    letter-spacing: 0.02em;
+  }
 }
 
 @media screen and (min-width: 1200px) {
