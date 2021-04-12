@@ -181,7 +181,7 @@
   @include font-style(1.17, 12px);
 
   @media screen and (max-width: 480px) {
-    @include font-style(1.71, 10px, 00.02em);
+    @include font-style(1.17, 9px, 00.02em);
   }
 
   @media screen and (min-width: $desktop) {

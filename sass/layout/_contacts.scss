@@ -1,11 +1,13 @@
 .contacts {
+  display: none;
+
   @extend %list;
 
   @media screen and (min-width: $tablet) {
-    // margin-left: auto;
-    // padding-left: 0px;
-    // display: flex;
-    // align-items: center;
+    margin-left: auto;
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
   }
 
   @media screen and (min-width: $desktop) {
