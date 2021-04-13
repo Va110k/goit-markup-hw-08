@@ -1181,9 +1181,6 @@
 }
 
 .project {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-top: 30px;
   margin-left: 30px;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1214,7 +1211,6 @@
 .project__image {
   position: relative;
   overflow: hidden;
-  max-width: 100%;
 }
 
 .project__overlay {
