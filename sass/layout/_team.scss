@@ -35,21 +35,6 @@
   @media screen and (min-width: $desktop) {
     flex-basis: calc(100% / 4 - 30px);
   }
-  // &:not(:last-child) {
-  //   margin-bottom: 30px;
-  // }
-
-  // @media screen and (max-width: 1199px) {
-  //   &:not(:last-child) {
-  //     margin-bottom: 30px;
-  //   }
-  // }
-
-  // @media screen and (min-width: $tablet) {
-  //   &:not(:last-child) {
-  //     margin-right: 30px;
-  //   }
-  // }
 }
 
 .team__photo {
