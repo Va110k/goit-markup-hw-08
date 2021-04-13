@@ -36,6 +36,9 @@
 .contacts__link {
   color: $secondary-text-color;
 
+  display: flex;
+  align-items: center;
+
   font-weight: 500;
 
   @include font-style(1.16, 12px, 0.02em);
@@ -53,9 +56,13 @@
 
   @extend %link;
 
+  // @media screen and (max-width: 1199px) {
+  //   &:first-child {
+  //     align-items: flex-start;
+  //   }
+  // }
+
   @media screen and (min-width: $desktop) {
-    display: flex;
-    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
   }

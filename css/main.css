@@ -717,6 +717,12 @@
 
 .contacts__link {
   color: #757575;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-weight: 500;
   line-height: 1.16;
   font-size: 12px;
@@ -739,12 +745,6 @@
 
 @media screen and (min-width: 1200px) {
   .contacts__link {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
   }
