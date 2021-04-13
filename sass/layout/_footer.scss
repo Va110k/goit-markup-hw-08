@@ -3,8 +3,22 @@
 }
 
 .footer__container {
-  @media screen and (min-width: $desktop) {
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (min-width: $tablet) {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: $desktop) {
+    position: relative;
+    justify-content: space-between;
   }
 }
 
@@ -51,8 +65,6 @@
 }
 
 .footer__form {
-  margin-left: auto;
-
   @media screen and (max-width: 767px) {
     margin-top: 60px;
     text-align: center;
@@ -64,6 +76,7 @@
 
   @media screen and (min-width: $desktop) {
     padding-top: 72px;
+    margin-left: auto;
   }
 }
 
