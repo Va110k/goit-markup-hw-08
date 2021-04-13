@@ -56,15 +56,15 @@
 
   @extend %link;
 
-  // @media screen and (max-width: 1199px) {
-  //   &:first-child {
-  //     align-items: flex-start;
-  //   }
-  // }
-
   @media screen and (min-width: $desktop) {
     padding-top: 32px;
     padding-bottom: 32px;
+  }
+}
+
+.contacts__link-mail {
+  @media screen and (max-width: 1199px) {
+    align-items: flex-start;
   }
 }
 

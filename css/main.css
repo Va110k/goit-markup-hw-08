@@ -750,6 +750,14 @@
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .contacts__link-mail {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 .contacts__icon {
   fill: currentColor;
   margin-right: 8px;
