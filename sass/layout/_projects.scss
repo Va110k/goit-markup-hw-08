@@ -39,6 +39,8 @@
 }
 
 .project {
+  display: flex;
+  // justify-content: center;
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 30px;
@@ -69,7 +71,7 @@
 }
 
 .project__image {
-  max-width: 100%;
+  width: 100%;
   position: relative;
 
   overflow: hidden;
