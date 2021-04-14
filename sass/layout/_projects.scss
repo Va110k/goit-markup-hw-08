@@ -67,8 +67,6 @@
 }
 
 .project__link {
-  display: flex;
-  flex-direction: column;
   @extend %link;
 }
 
@@ -106,7 +104,6 @@
 }
 
 .project__content {
-  flex-grow: 1;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 23px;
